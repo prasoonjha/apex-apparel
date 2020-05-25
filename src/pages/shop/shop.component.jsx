@@ -12,6 +12,7 @@ const ShopPage = ({ collections }) => {
     <div className="shop-page">
       {collections.map((collection) => (
         <CollectionPreview
+          key={collection.id}
           id={collection.id}
           items={collection.items}
           title={collection.title}
